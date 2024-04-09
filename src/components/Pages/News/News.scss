@@ -1,0 +1,54 @@
+@import "../../Global/variables.scss";
+
+
+.News {
+    color: #000;
+
+
+
+}
+
+.post {
+    display: flex;
+    margin: 50px auto;
+    &__info {
+        margin-right: 50px;
+        position: relative;
+        .post__date {
+            position: absolute;
+            bottom: -23px;
+            right: 11px;
+            color: $white;
+            padding: 10px 20px;
+            background-color: $primary;
+            font-weight: 800;
+            font-size: 20px;
+        }
+    }
+
+    &__img {
+        width: 435px;
+        height: 300px;
+    }
+    &__title {
+        font-size: 32px;
+        margin-bottom: 18px;
+        font-family: "PT Sans Narrow", sans-serif;
+    }
+    &__text {
+        line-height: 1.15;
+        margin-bottom: 87px;
+    }
+    &__link {
+        color: $secondary;
+        font-size: 20px;
+        font-weight: 600;
+        img {
+            margin-left: 9px;
+        }
+    }
+}
+
+
+
+

@@ -1,0 +1,48 @@
+
+@import "../Global/variables.scss";
+@import "../Global/global.scss";
+
+
+.navigation {
+    &__container {
+        max-width: 1510px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__up {
+        background-color: $secondary;
+    }
+    &__down {
+        background-color: $primary;
+        width: 100%;
+        span {
+            color: $white;
+            padding: 13px 0;
+            font-weight: 600;
+            font-size: 20px;
+        }
+        span, img {
+            margin-right: 16px;
+        }
+        &-item {
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__suptitle, &__title {
+        color: $white;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    &__suptitle {
+        font-family: "PT Sans Narrow", sans-serif;
+        font-size: 25px;
+        padding-top: 40px;
+        font-weight: 700;
+    }
+    &__title {
+        font-size: 50px;
+        font-weight: 800;
+        padding-bottom: 40px;
+    }
+}

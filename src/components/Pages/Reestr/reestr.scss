@@ -1,0 +1,28 @@
+@import "../../Global/variables";
+
+.reestr {
+    &__inner {
+        margin-top: 50px;
+        margin-bottom: 110px;
+    }
+    tbody, td, tfoot, th, thead, tr {
+        border: 2px solid $primary;
+        color: $primary;
+    }
+    th {
+        padding: 13px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    &__table {
+        width: 1205px;
+        border: 3px solid $primary;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+    .table-striped>tbody>tr:nth-of-type(odd)>* {
+        color: $white;
+        background: $white;
+    }
+}
