@@ -1,6 +1,5 @@
 // import AppRoutes from '../Routes/Routes';
-import {Routes, Route} from 'react-router-dom';
-import { BrowserRouter } from 'react-router-dom';
+import {Routes, Route, Navigate} from 'react-router-dom';
 
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -22,16 +21,20 @@ import Reestr from '../Pages/Reestr/Reestr';
 import Ocup from '../Pages/Ocup/Ocup';
 import FullNews from '../Pages/FullNews/FullNews';
 
-import Account from '../Pages/Account/Account';
+
+import User from '../User/User';
+import MyReq from '../User/MyReq/MyReq';
 
 import AddNews from '../Admin/AddNews/AddNews';
 
 function App() {
+
+  const isLoggedIn = localStorage.getItem('token');
+
   return <div className="App">
-  <BrowserRouter>
         <Header />
       <Routes>
-          <Route index path="/" element={<Home />} />
+          <Route index element={<Home />} />
           <Route path="news" element={<News />} />
           <Route path="catalogs" element={<Catalog />} />
           <Route path="catalogs/poisk_pravoobladateley" element={<Copyholder />} />
@@ -40,14 +43,15 @@ function App() {
           <Route path="docs" element={<Docs />} />
           <Route path="contacts" element={<Contacts />} />
           <Route path="about" element={<About />} />
-          <Route path="account" element={<Account />} />
+          
+          <Route path="account" element={isLoggedIn ? <User /> : <Navigate to="/authorization/auth" />} />
           <Route path="news/:id" element={<FullNews />} />
           <Route path="addnews" element={<AddNews />} />
           <Route path="authorization/signup" element={<Register />} />
           <Route path="authorization/auth" element={<Login />} />
+          <Route path="account/myrequest" element={<MyReq />} />
       </Routes>
       <Footer />
-  </BrowserRouter>
   </div>;
 }
 

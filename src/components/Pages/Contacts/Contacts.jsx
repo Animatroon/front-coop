@@ -3,6 +3,8 @@ import Navigation from "../../Navigation/Navigation";
 
 import './contacts.scss';
 import { Conts, Main } from '../../Global/Images';
+import { Form } from 'react-bootstrap';
+
 
 const Contacts = () => {
   return (
@@ -43,6 +45,18 @@ const Contacts = () => {
               <div className="form__item"><span className='form__text'>Ваше E-mail*</span><input required className='form__input' type="text" /></div>
               <div className="form__item"><span className='form__text'>Ваше имя*</span><input required className='form__input' type="text" /></div>
               <div className="form__item"><span className='form__text'>Сообщение</span><textarea className='form__textarea' name="" id="" cols="30" rows="3"></textarea></div>
+              <div className="form__item-comf">
+
+              <div className="g-recaptcha"><img src={Conts.recap} alt="" /></div>
+                <Form.Check
+                  type="checkbox"
+                  id="comfirm"
+                  className='check'
+                  label="Я согласен на обработку персональных данных"
+                />
+              </div>
+              {/* Капча */}
+              <button className='form__btn' type="submit">Отправить</button>
             </div>
           </div>
         </div>

@@ -1,17 +1,17 @@
 import React from 'react';
 import Navigation from "../../Navigation/Navigation";
 
-import './ocup.scss';
+import styles from'./ocup.module.scss';
 
 const ListItem = () => {
 
     return (
-        <li className="list__item">
-            <div className="list__content">
-                <span className="list__id">№1</span>
-                <p className="list__text">Государственная служба интеллектуальной собственности при Правительстве Кыргызской Республики (Кыргызпатент). Кыргызстан.</p>
+        <li className={styles.list__item}>
+            <div className={styles.list__content}>
+                <span className={styles.list__id}>№1</span>
+                <p className={styles.list__text}>Государственная служба интеллектуальной собственности при Правительстве Кыргызской Республики (Кыргызпатент). Кыргызстан.</p>
             </div>
-            <div className="list__line"></div>
+            <div className={styles.list__line}></div>
         </li>
     );
 }
@@ -21,13 +21,13 @@ const Ocup = () => {
 
 
     return (
-        <div className="ocup">
+        <div className={styles.ocup}>
             <Navigation suptitle={"НАШИ РЕЕСТРЫ"} title={"ИНОСТРАННЫЕ ОКУПы"} nav1={"Каталог"}/>
-            <div className="ocup__inner box">
+            <div className={`${styles.ocup__inner} box`}>
 
-            <h2 className="ocup__title">КАТАЛОГИ ИНОСТРАННЫХ ОКУПОВ ПЕРЕДАННЫЕ В УПРАВЛЕНИЕ</h2>
+            <h2 className={styles.ocup__title}>КАТАЛОГИ ИНОСТРАННЫХ ОКУПОВ ПЕРЕДАННЫЕ В УПРАВЛЕНИЕ</h2>
 
-            <ul className="ocup__info">
+            <ul className={styles.ocup__info}>
                 <ListItem />
                 <ListItem />
                 <ListItem />

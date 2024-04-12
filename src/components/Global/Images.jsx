@@ -1,4 +1,4 @@
-import bgHome from "../../images/main/bg-home.png";
+import bgHome from "../../images/main/contacts.png";
 import f1 from "../../images/main/function-1.svg";
 import f2 from "../../images/main/function-2.svg";
 import f3 from "../../images/main/function-3.svg";
@@ -23,6 +23,7 @@ import profile from '../../images/personal/profile.svg';
 import conts1 from '../../images/contacts/contacts-1.svg';
 import conts2 from '../../images/contacts/contacts-2.svg';
 import conts3 from '../../images/contacts/contacts-3.svg';
+import recap from '../../images/contacts/recap 7.png'
 
 
 
@@ -50,6 +51,7 @@ export const Conts = {
     conts1: conts1,
     conts2: conts2,
     conts3: conts3,
+    recap: recap,
 }
 export const Navi = {
     nav: nav

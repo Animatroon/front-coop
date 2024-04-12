@@ -5,7 +5,7 @@ import './reestr.scss';
 import { Table } from 'react-bootstrap';
 import Search from '../../Search/Search';
 
-const TableSetion = () => {
+const TableSection = () => {
 
     // return (
         

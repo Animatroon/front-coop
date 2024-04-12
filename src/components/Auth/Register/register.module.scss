@@ -53,9 +53,45 @@
             background-color: #134884;
         }
     }
+    &__username {
+
+    }
+
+    .input__form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .input__items {
+        display: flex;
+        flex-direction: column;
+        input {
+            width: 340px;
+            margin-bottom: 25px;
+            outline: none;
+            border: 3px solid $secondary;
+            border-radius: 15px;
+            padding: 10px 0;
+            padding-left: 17px;
+
+            &, &::placeholder {
+                color: $primary;
+                font-weight: 600;
+            }
+        }
+    }
 }
 
 .active {
     background-color: $secondary;
     color: $white;
 }
+
+.userButton {
+    &.active {
+      background-color: $secondary !important; /* Желаемый цвет фона для активной кнопки */
+    color: $white !important;
+
+    }
+  }
+  
