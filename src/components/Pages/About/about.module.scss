@@ -1,0 +1,15 @@
+.about {
+    &__inner {
+        margin-bottom: 620px;
+    }
+
+    &__title {
+        font-weight: 700;
+        margin-bottom: 28px;
+        text-align: center;
+    }
+    &__dest {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}

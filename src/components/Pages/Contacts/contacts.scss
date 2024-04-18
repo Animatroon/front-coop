@@ -1,0 +1,132 @@
+
+@import "../../Global/variables.scss";
+
+.contacts {
+    &__inner {
+        display: flex;
+        margin-bottom: 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info {
+        width: 740px;
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    &__item {
+        margin-right: 38px;
+        display: flex;
+        color: $secondary;
+        margin-bottom: 50px;
+
+        img {
+            margin-right: 25px;
+        }
+    }
+    &__content {
+        a {
+            text-decoration: none;
+            color: $secondary;
+            white-space: nowrap;
+        }
+    }
+    &__phone, &__email {
+        font-size: 18px;
+    }
+
+    &__addr {
+        font-size: 14px;
+        font-weight: 700;
+    }
+    &__title {
+        font-weight: 800;
+        font-size: 20px;
+    }
+    &__map {
+        width: 735px;
+        height: 430px;
+    }
+
+    &__form {
+        padding: 54px 50px 32px;    
+        background-color: $primary;
+        color: $white;    
+        border-radius: 30px;
+    }
+    
+    .form {
+        &__title {
+            font-size: 36px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 90px;
+        }
+        &__item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            &-comf {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 65px;
+            }
+        }
+        &__text {
+            font-size: 18px;
+            font-weight: 600;
+            margin-right: 85px;
+            white-space: nowrap;
+        }
+        &__input {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            border-bottom: 3px solid $white;
+            padding: 5px;
+            color: $white;
+            font-size: 18px;
+            max-width: 280px;
+            width: 100%;
+        }
+        &__textarea {
+            background-color: transparent;
+            border-color: $white;
+            outline: none;
+            color: $white;
+            border-radius: 10px;
+        }
+
+        .check {
+            display: flex;
+            align-items: center;
+            width: 240px;
+            margin: 0 0 0 15px;
+            input {
+            margin-right: 12px;
+            width: 25px;
+            height: 25px;   
+            }
+            label {
+                font-size: 15px;
+                line-height: 1.4;
+            }
+        }
+
+        &__btn  {
+            padding: 11px 39px;
+            background-color: $white;
+            color: $secondary;
+            border: none;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 10px;
+            float: right;
+        }
+    }
+}
+
+
